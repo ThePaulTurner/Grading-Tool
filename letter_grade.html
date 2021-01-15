@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Show letter grade</title>
+
+<! -- Assignment Below -->
+	<script>
+		var entry;
+		var letterGrade;
+
+	 do {
+		entry = prompt ("Enter Paul Turner's number grade from 0 through 100 \n" +
+		                "Or enter 999 to end entries");
+        entry = parseInt (entry);
+
+		if (entry >= 90 && entry <= 100) {
+		    alert ("Number grade = " +  entry + '\n' + 
+		           "Letter grade =  A");
+
+		}
+
+		else if (entry >= 80 && entry <= 89) {
+			alert ("Number grade = " +  entry + '\n' + 
+		           "Letter grade =  B");
+		}
+
+		else if (entry >= 70 && entry <= 79) {
+			alert ("Number grade = " +  entry + '\n' + 
+		           "Letter grade =  C");
+		}
+
+		else if (entry >= 60 && entry <= 69) {
+
+			alert ("Number grade = " +  entry + '\n' + 
+		           "Letter grade =  D");
+		}
+
+		else if (entry >= 0 && entry <= 59) {
+			alert ("Number grade = " +  entry + '\n' + 
+		           "Letter grade =  F");
+		}
+
+	    }
+
+        while (entry !=999);
+		var average = total/entryCount;
+		average = parseInt(average);
+		alert("Average score is " + average);
+
+	</script>
+
+
+<! -- Assignment Above -->
+
+
+</head>
+<body>
+	<main>
+    	<h1>This page is displayed after the JavaScript is executed</h1>
+	</main>
+</body>
+</html>
